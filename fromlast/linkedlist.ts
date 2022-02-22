@@ -2,7 +2,7 @@
 // Implement classes Node and Linked Lists
 // See 'directions' document
 
-type NullableNode = Node | null | undefined;
+export type NullableNode = Node | null | undefined;
 type Fn = (node: Node, counter: number) => void;
 
 export class Node {

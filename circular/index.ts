@@ -19,9 +19,7 @@ export const circular = (list: LinkedList): boolean => {
   let fast = list.getFirst();
 
   while (fast?.next && fast.next.next) {
-    if (slow) {
-      slow = slow.next;
-    }
+    slow = slow?.next;
     fast = fast.next.next;
 
     if (slow === fast) {
