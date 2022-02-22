@@ -238,7 +238,7 @@ Deno.test("for...of loops works with the linked list", () => {
   l.insertLast(3);
   l.insertLast(4);
 
-  for (let node of l) {
+  for (const node of l) {
     node.data += 10;
   }
 
